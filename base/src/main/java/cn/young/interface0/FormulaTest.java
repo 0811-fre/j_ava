@@ -1,7 +1,14 @@
 package cn.young.interface0;
 
-
+/**
+ * @
+ */
 public class FormulaTest {
+    /**
+     * 主方法
+     * @// TODO: 2022/9/19
+     * @param args
+     */
     public static void main(String[] args) {
         System.out.println("abc");
         Formula formula = new Formula() {
@@ -10,6 +17,7 @@ public class FormulaTest {
                 return sqrt(a * 100);
             }
         };
+
         System.out.println(formula.calculate(100)); // 100.0 formula.sqrt(16);
         System.out.println(formula.sqrt(16)); // 4.0
 
