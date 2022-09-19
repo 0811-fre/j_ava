@@ -1,16 +1,12 @@
 package cn.young.MT;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+public class MutilThread2 {
 
-public class MutilThread {
-
-    static class RunnableDemo implements Runnable {
+    static class ThreadDemo extends Thread {
         private Thread t;
         private String threadName;
 
-        RunnableDemo( String name) {
+        ThreadDemo( String name) {
             threadName = name;
             System.out.println("Creating " +  threadName );
         }
@@ -41,11 +37,18 @@ public class MutilThread {
     public static class TestThread {
 
         public static void main(String args[]) {
-            RunnableDemo R1 = new RunnableDemo( "Thread-1");
-            R1.start();
+            System.out.println(new MutilThread2.ThreadDemo("t1"));
+            System.out.println(new MutilThread2.ThreadDemo("t2"));
 
-            RunnableDemo R2 = new RunnableDemo( "Thread-2");
-            R2.start();
+            ThreadDemo T1 = new ThreadDemo( "Thread-1");
+            T1.start();
+
+//            ThreadDemo T2 = new ThreadDemo( "Thread-2");
+//            T2.start();
+
+
+
         }
     }
+
 }
