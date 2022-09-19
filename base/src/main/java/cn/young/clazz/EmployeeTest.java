@@ -1,11 +1,6 @@
-package cn.young.test;
-
-import cn.young.test.entity.Employee;
+package cn.young.clazz;
 
 public class EmployeeTest{
-
-
-
 
     public static void main(String[] args){
         /* 使用构造器创建两个对象 */
