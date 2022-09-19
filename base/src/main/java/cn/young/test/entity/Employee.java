@@ -1,4 +1,4 @@
-package cn.young.cn.young.entity;
+package cn.young.test.entity;
 
 public class Employee{
     String name;

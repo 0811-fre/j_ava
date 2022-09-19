@@ -1,6 +1,6 @@
-package cn.young.entity.cn.young.test;
+package cn.young.test;
 
-import cn.young.entity.Employee;
+import cn.young.test.entity.Employee;
 
 public class EmployeeTest{
 

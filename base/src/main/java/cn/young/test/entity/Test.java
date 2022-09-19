@@ -1,4 +1,4 @@
-package cn.young.entity;
+package cn.young.test.entity;
 
 public class Test {
     public static void main(String[] args) {
